@@ -15,9 +15,9 @@ var parola = prompt("dimmi una parola");
 console.log(parola);
 
 
-var word = parola;
 
-function palindroma(word) {
+
+function palindroma(parola) {
 
   var newarray = parola.split("");
   console.log(newarray);
@@ -28,8 +28,10 @@ function palindroma(word) {
   var nuova = reversearray.join("");
   console.log(nuova);
 
-  if (nuova === parola) {
+  if (nuova == parola) {
     return true;
+  } else {
+    return false;
   }
 }
 
