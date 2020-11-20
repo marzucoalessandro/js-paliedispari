@@ -38,3 +38,15 @@ if ((choosenumber > 5) || (choosenumber <= 0)) {
  var number = numrandom(number);
 
  var somma =  number + choosenumber;
+
+ function pariedispari(somma) {
+
+    if (somma %2 == 0) {
+      return ("la somma è pari");
+
+    }else {
+      return ("la somma è dispari")
+    }
+ }
+
+ 
