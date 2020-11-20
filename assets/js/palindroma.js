@@ -14,28 +14,28 @@
 var parola = prompt("dimmi una parola");
 console.log(parola);
 
-var newarray = parola.split("");
-console.log(newarray);
 
-var reversearray = newarray.reverse();
-console.log(reversearray);
-
-var nuova = reversearray.join("");
-console.log(nuova);
-
-if (parola === nuova) {
-  console.log("la parola è palindroma");
-
-} else {
-  console.log("la parola non è palindroma");
-}
 
 
 function palindroma(text) {
 
+  var newarray = parola.split("");
+  console.log(newarray);
 
+  var reversearray = newarray.reverse();
+  console.log(reversearray);
 
-
-
+  var nuova = reversearray.join("");
+  console.log(nuova);
 
 }
+
+
+
+
+  if (palindroma(parola)) {
+    console.log("la parola è palindroma");
+
+  } else {
+    console.log("la parola non è palindroma");
+  }
