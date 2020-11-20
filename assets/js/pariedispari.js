@@ -31,11 +31,10 @@ if ((choosenumber > 5) || (choosenumber <= 0)) {
 
  function numrandom(number) {
 
-   return Math.floor(Math.random() * (5 - 1));
+   return Math.floor(Math.random() * 6) ;
  }
 
  // assegniamo una variabile alla funzione numrandom;
  var number = numrandom(number);
 
  var somma =  number + choosenumber;
- 
