@@ -7,19 +7,6 @@
 
 var letter = prompt("scegli pari con p o dispari con d");
 
-//if (letter = p) {
-  //  letter = true;
-    //alert("hai scelto pari ");
-  //} else if (letter = d) {
-    //letter = true;
-    //alert("hai scelto dispari");
-  //} else {
-    //alert("devi scegliere p oppure d");
-  //}
-
-
-
-
 var choosenumber = Number(prompt("scegli un numero tra 1 e 5"));
 
 if ((choosenumber > 5) || (choosenumber <= 0)) {
@@ -42,11 +29,17 @@ if ((choosenumber > 5) || (choosenumber <= 0)) {
  function pariedispari(somma) {
 
     if (somma %2 == 0) {
+      var pari = "p";
       return ("la somma è pari");
 
     }else {
+      var dispari = "d";
       return ("la somma è dispari")
     }
  }
 
- 
+ if (pariedispari(somma) = letter ) {
+   console.log("hai vinto!!!!");
+ } else {
+   console.log("spiaze....hai perso");
+ }
