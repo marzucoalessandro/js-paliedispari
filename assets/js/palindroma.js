@@ -23,11 +23,19 @@ console.log(reversearray);
 var nuova = reversearray.join("");
 console.log(nuova);
 
+if (parola === nuova) {
+  console.log("la parola è palindroma");
+
+} else {
+  console.log("la parola non è palindroma");
+}
+
+
 function palindroma(text) {
 
 
 
 
 
-  console.log(newarray);
+
 }
