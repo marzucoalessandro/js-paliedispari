@@ -5,41 +5,45 @@
 //Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 //Dichiariamo chi ha vinto.
 
-var letter = prompt("scegli pari con p o dispari con d");
+var letter = prompt("scegli pari o dispari");
+console.log(letter);
 
 var choosenumber = Number(prompt("scegli un numero tra 1 e 5"));
+console.log(choosenumber);
 
-if ((choosenumber > 5) || (choosenumber <= 0)) {
-    alert("il numero inserito è sbagliato");
 
-}
 
 //creaimo la funzione per il numero casuale tra 1 e 5 del comp;
 
- function numrandom(number) {
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
 
-   return Math.floor(Math.random() * 6) ;
- }
+}
+
+
+
 
  // assegniamo una variabile alla funzione numrandom;
- var number = numrandom(number);
+  var numeroComp  = getRndInteger(1, 5);
+ console.log(numeroComp);
 
- var somma =  number + choosenumber;
+ var somma =  numeroComp + choosenumber;
+ console.log(somma);
 
- function pariedispari(somma) {
+ function pariedispari(inserisciUnNumero) {
 
-    if (somma %2 == 0) {
-      var pari = "p";
-      return ("la somma è pari");
+    if (somma %2 === 0) {
+
+      return "pari";
 
     }else {
-      var dispari = "d";
-      return ("la somma è dispari")
+
+      return "dispari";
     }
  }
 
- if (pariedispari(somma) = letter ) {
+ if (pariedispari(somma) === letter ) {
    console.log("hai vinto!!!!");
  } else {
    console.log("spiaze....hai perso");
- }
+ };
